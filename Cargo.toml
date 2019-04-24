@@ -5,12 +5,9 @@ authors = ["Martin Mariano"]
 edition = "2018"
 
 [dependencies]
-winapi = { version = "0.3.7", features = ["winuser", "consoleapi"] }
+winapi = { version = "0.3.7", features = ["winuser", "consoleapi", "processthreadsapi", "psapi"] }
 detour = "0.6.0"
 libc = "0.2.51"
 chiter = "0.4.0"
 volatile = "0.2.6"
 
-[lib]
-name = "assault_cube"
-crate-type = ["dylib", "rlib"]
